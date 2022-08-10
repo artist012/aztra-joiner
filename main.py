@@ -46,7 +46,7 @@ def main():
                     t.start()
                     c += 1
 
-                    if c % 6 == 0:
+                    if c % 6 == 0: // Rate limit 방지
                         time.sleep(4)
                 else:
                     print("\x1b[33m"+"Invalid Discord Token: "+token+"\x1b[0m")
